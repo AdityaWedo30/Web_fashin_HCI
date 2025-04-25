@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1f1f3b;
+  color: white;
+}
+
+.banner {
+  text-align: center;
+  padding: 40px;
+  background-image: url("/assets/Frame\ 1.png"); /* Ganti dengan URL atau path gambar */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner p {
+  text-align: center;
+}
+
+.filters {
+  background: #f4a261;
+  padding: 10px;
+  color: black;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 15px;
+}
+
+.product {
+  width: 187px;
+  height: 270px;
+  background: #2e2e55;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  background: #3a3a6a;
+  box-shadow: 0px 4px 10px black;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 150px;
+  background-image: url("/assets/parfum.png"); /* Ganti dengan path gambar */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Saat hover, gambar sedikit membesar */
+.product:hover .image-placeholder {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.product-info h3,
+p {
+  text-align: left;
+}
+
+.price {
+  font-weight: bold;
+  color: #f4a261;
+  font-size: 14px;
+}
+
+/* Efek hover untuk harga */
+.product:hover .price {
+  color: #ffcc00;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #aaa;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.pagination {
+  text-align: center;
+  padding: 20px;
+}
+
+.pagination button {
+  background: #f4a261;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.copyright {
+  color: black;
+}

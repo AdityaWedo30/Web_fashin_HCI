@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c3c;
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  padding: 250px;
+  background: url("/assets/backgriund\ firs\ page.png") no-repeat center
+    center/cover;
+}
+
+.hero h1 {
+  font-size: 98px;
+  letter-spacing: 54px;
+  font-weight: normal;
+  line-height: 0.3px;
+}
+
+.hero h2 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  margin-top: 70px;
+}
+
+.hero p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  white-space: pre-line;
+  font-weight: 300;
+}
+
+.new-product {
+  text-align: center;
+  padding: 250px;
+  background: url("/assets/Frame\ 1.png") no-repeat center center/cover;
+}
+
+.new-product h2 {
+  font-size: 48px;
+  font-weight: normal;
+}
+
+.best-week {
+  text-align: center;
+  padding: 190px;
+  background-color: #333366;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 20px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  background: wheat;
+  font-family: Arial, sans-serif;
+}
+
+.product {
+  padding: 10px;
+  font-size: 18px;
+  /* font-weight: bold; */
+  color: black;
+}
+
+.product:hover {
+  transform: scale(1.1);
+  background-color: #ff5733;
+  color: white;
+  transition: 0.3s;
+}

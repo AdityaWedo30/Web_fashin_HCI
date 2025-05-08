@@ -39,7 +39,7 @@ body {
   padding: 10px;
   text-align: center;
   border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product:hover {
@@ -89,16 +89,19 @@ p {
   font-size: 12px;
 }
 
-.pagination {
-  text-align: center;
-  padding: 20px;
+.video-container {
+  height: 350px; /* Atur tinggi frame sesuai keinginan */
+  overflow: hidden; /* Potong bagian yang lebih dari tinggi */
+  position: relative;
 }
 
-.pagination button {
-  background: #f4a261;
-  border: none;
-  padding: 10px;
-  margin: 5px;
-  cursor: pointer;
-  border-radius: 5px;
+.video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
 }

@@ -46,8 +46,10 @@ body {
 }
 
 .hero-text p {
-  font-size: 1.25rem;
+  font-size: 20px;
   line-height: 1.6;
+  letter-spacing: 1px;
+  max-width: none;
 }
 
 /* Optional Responsiveness */
@@ -74,31 +76,17 @@ body {
 }
 
 .about-description h3 {
-  font-size: 1.2rem;
+  font-size: 22px;
   letter-spacing: 2px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 30px;
   text-transform: uppercase;
 }
 
 .about-description p {
   max-width: 800px;
   margin: 0 auto;
-  font-size: 1rem;
+  font-size: 20px;
   line-height: 1.8;
-  font-family: "Helvetica Neue", sans-serif;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .about-description {
-    padding: 3rem 1.5rem;
-  }
-
-  .about-description h3 {
-    font-size: 1rem;
-  }
-
-  .about-description p {
-    font-size: 0.95rem;
-  }
+  font-family: sans-serif;
+  letter-spacing: 1px;
 }

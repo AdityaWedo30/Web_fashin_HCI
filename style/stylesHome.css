@@ -28,7 +28,7 @@ body {
 }
 
 .hero p {
-  font-size: 18px;
+  font-size: 1rem;
   letter-spacing: 1px;
   font-weight: normal;
   white-space: pre-line;

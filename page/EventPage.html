@@ -1,29 +1,90 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Community - Wijaya Fashion</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Event - Wijaya Fashion</title>
+    <link rel="stylesheet" href="/style/stylesEvent.css" />
+    <link rel="stylesheet" href="/style/font.css" />
+    <link rel="stylesheet" href="/style/header.css" />
+    <link rel="stylesheet" href="/style/footer.css" />
   </head>
   <body>
     <header>
       <nav>
-        <div class="logo">LOGO</div>
+        <a href="/index.html" class="logo">
+          <img src="/assets/Logo_png.png" alt="Wijaya Fashion Logo" />
+        </a>
         <ul>
-          <li><a href="/page/HomePage.html" class="active">Home</a></li>
+          <li><a href="/page/HomePage.html">Home</a></li>
           <li><a href="/page/GalleryPage.html">Gallery</a></li>
           <li><a href="/page/AboutPage.html">About Us</a></li>
-          <li><a href="/page/EventPage.html">Community</a></li>
+          <li><a href="/page/EventPage.html" class="active">Community</a></li>
         </ul>
-        <div class="login"><a href="#">Login</a></div>
+        <div class="login">
+          <a href="#">Login</a>
+        </div>
       </nav>
     </header>
-    <section class="community">
-      <h1>Community</h1>
-      <p>Join our fashion community and stay updated with the latest trends.</p>
-    </section>
+
+    <!-- Video Background Section for Event Page -->
+    <div class="video-container">
+      <video autoplay muted loop playsinline>
+        <source
+          src="/assets/yt1z.net - FASHION FILM Fashion Editorial Sass İn Class ㅡ Pap magazine (720p).mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+      <div class="overlay-text">
+        <h1>Join Our Fashion Events</h1>
+        <p>
+          Experience the elegance and excitement of the Wijaya Fashion community
+        </p>
+      </div>
+    </div>
+
     <footer>
-      <p>&copy; 2025 Wijaya Fashion. All rights reserved.</p>
+      <div class="footer-content">
+        <div class="address">
+          <p>Wisconsin Ave, Suite 700</p>
+          <p>Chevy Chase, Maryland 20815</p>
+        </div>
+        <div class="company">
+          <h3>Company</h3>
+          <p>About Us</p>
+          <p>Careers</p>
+          <p>FAQs</p>
+        </div>
+        <div class="resources">
+          <h3>Resources</h3>
+          <p>Academy</p>
+          <p>Blog</p>
+          <p>Themes</p>
+          <p>Hosting</p>
+        </div>
+        <div class="contact">
+          <button>Contact Us</button>
+          <button>Get Started</button>
+        </div>
+      </div>
+      <div class="footer-content social-icons">
+        <a href="#" class="social-icon">
+          <img src="/assets/X.png" alt="X" />
+        </a>
+        <a href="#" class="social-icon">
+          <img src="/assets/Instagram.png" alt="Instagram" />
+        </a>
+        <a href="#" class="social-icon">
+          <img src="/assets/TikTok.png" alt="TikTok" />
+        </a>
+        <a href="#" class="social-icon">
+          <img src="/assets/Facebook.png" alt="Facebook" />
+        </a>
+      </div>
+      <div class="copyright">
+        <p>© 2021 All Rights Reserved</p>
+      </div>
     </footer>
   </body>
 </html>

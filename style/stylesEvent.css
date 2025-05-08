@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1f1f3b;
+  color: white;
+}
+
+.video-container {
+  height: 350px; /* Atur tinggi frame sesuai keinginan */
+  overflow: hidden; /* Potong bagian yang lebih dari tinggi */
+  position: relative;
+}
+
+.video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.overlay-text h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.overlay-text p {
+  font-size: 1.5rem;
+}

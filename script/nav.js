@@ -39,4 +39,34 @@ document.addEventListener("DOMContentLoaded", function () {
       this.style.transform = "translateX(0)"; // Kembalikan posisi saat hover selesai
     });
   });
+  document.getElementById("dob").addEventListener("input", function (e) {
+    let value = e.target.value.replace(/\D/g, "");
+    if (value.length >= 5) {
+      value =
+        value.slice(0, 2) + "/" + value.slice(2, 4) + "/" + value.slice(4, 8);
+    } else if (value.length >= 3) {
+      value = value.slice(0, 2) + "/" + value.slice(2);
+    }
+    e.target.value = value;
+  });
+
+  document.getElementById("eventForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const email = document.getElementById("email").value;
+    const fullName = document.getElementById("fullName").value;
+    const dob = document.getElementById("dob").value;
+    const gender = document.getElementById("gender").value;
+    const message = document.getElementById("message");
+
+    if (!email.includes("@")) {
+      message.textContent = "Email tidak valid. Harus mengandung '@'.";
+      return;
+    }
+
+    console.log("Email:", email);
+    console.log("Nama:", fullName);
+    console.log("Tanggal Lahir:", dob);
+    console.log("Gender:", gender);
+    message.textContent = "Form berhasil dikirim!";
+  });
 });

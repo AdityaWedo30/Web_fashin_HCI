@@ -46,6 +46,10 @@ body {
   font-weight: normal;
 }
 
+.new-product p {
+  font-size: 25px;
+}
+
 .best-week {
   text-align: center;
   padding: 190px;
@@ -72,7 +76,6 @@ body {
 .product {
   padding: 10px;
   font-size: 18px;
-  /* font-weight: bold; */
   color: black;
 }
 

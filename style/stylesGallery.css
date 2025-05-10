@@ -17,6 +17,7 @@ body {
 
 .banner p {
   text-align: center;
+  font-size: 23px;
 }
 
 .filters {
@@ -27,9 +28,12 @@ body {
 
 .product-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
   gap: 20px;
   padding: 15px;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 70px;
 }
 
 .product {
@@ -42,28 +46,27 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.product:hover {
-  transform: scale(1.05);
-  background: #3a3a6a;
-  box-shadow: 0px 4px 10px black;
-}
-
-.image-placeholder {
-  width: 100%;
-  height: 150px;
-  background-image: url("/assets/parfum.png"); /* Ganti dengan path gambar */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 10px;
-  border-radius: 8px;
+.image-wrapper img {
+  width: 170px;
+  height: 160px;
+  object-fit: cover;
   transition: transform 0.4s ease, opacity 0.4s ease;
+  border-radius: 8px;
 }
 
-/* Saat hover, gambar sedikit membesar */
-.product:hover .image-placeholder {
-  transform: scale(1.1);
-  opacity: 0.9;
+.image-wrapper {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.product:hover {
+  transform: scale(1.03);
+  background: linear-gradient(145deg, #3a3a6a, #4e4e80);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.product:hover .image-wrapper {
+  transform: scale(1.05);
+  opacity: 0.95;
 }
 
 .product-info h3,

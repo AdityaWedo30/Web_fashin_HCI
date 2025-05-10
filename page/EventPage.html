@@ -4,16 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event - Wijaya Fashion</title>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="/style/stylesEvent.css" />
     <link rel="stylesheet" href="/style/font.css" />
     <link rel="stylesheet" href="/style/header.css" />
     <link rel="stylesheet" href="/style/footer.css" />
   </head>
   <body>
+    <!-- Header -->
     <header>
       <nav>
         <a href="/index.html" class="logo">
-          <img src="/assets/Logo_png.png" alt="Wijaya Fashion Logo" />
+          <img src="/assets/newLogo.png" alt="Wijaya Fashion Logo" />
         </a>
         <ul>
           <li><a href="/page/HomePage.html">Home</a></li>
@@ -27,6 +30,7 @@
       </nav>
     </header>
 
+    <!-- Video Section -->
     <div class="video-container">
       <video autoplay muted loop playsinline>
         <source
@@ -43,6 +47,34 @@
       </div>
     </div>
 
+    <!-- Form Section -->
+    <div class="page-content">
+      <div class="form-container">
+        <form id="eventForm">
+          <div class="input-group">
+            <input type="email" id="email" placeholder="Enter email" required />
+            <input
+              type="text"
+              id="fullName"
+              placeholder="Nama Lengkap"
+              required
+            />
+            <input
+              type="text"
+              id="dob"
+              placeholder="DD/MM/YYYY"
+              maxlength="10"
+              required
+            />
+            <input type="text" id="gender" placeholder="Gender" required />
+          </div>
+          <button type="submit">Submit</button>
+          <p id="message"></p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
     <footer>
       <div class="footer-content">
         <div class="address">
@@ -68,22 +100,24 @@
         </div>
       </div>
       <div class="footer-content social-icons">
-        <a href="#" class="social-icon">
-          <img src="/assets/X.png" alt="X" />
-        </a>
-        <a href="#" class="social-icon">
-          <img src="/assets/Instagram.png" alt="Instagram" />
-        </a>
-        <a href="#" class="social-icon">
-          <img src="/assets/TikTok.png" alt="TikTok" />
-        </a>
-        <a href="#" class="social-icon">
-          <img src="/assets/Facebook.png" alt="Facebook" />
-        </a>
+        <a href="#" class="social-icon"><img src="/assets/X.png" alt="X" /></a>
+        <a href="#" class="social-icon"
+          ><img src="/assets/Instagram.png" alt="Instagram"
+        /></a>
+        <a href="#" class="social-icon"
+          ><img src="/assets/TikTok.png" alt="TikTok"
+        /></a>
+        <a href="#" class="social-icon"
+          ><img src="/assets/Facebook.png" alt="Facebook"
+        /></a>
       </div>
       <div class="copyright">
         <p>© 2021 All Rights Reserved</p>
       </div>
     </footer>
+
+    <!-- Script -->
+    <script src="/script/nav.js"></script>
+    <script src="/script/script.js"></script>
   </body>
 </html>

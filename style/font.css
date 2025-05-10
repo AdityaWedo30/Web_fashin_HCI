@@ -12,6 +12,17 @@
 .new-product h2 {
   font-family: "Perpetua Titling MT", serif;
 }
+
+.new-product p {
+  font-family: "Perpetua", serif;
+}
+
 .about-description p {
+  font-family: "Perpetua", serif;
+}
+.banner h1 {
+  font-family: "Perpetua Titling MT", serif;
+}
+.banner p {
   font-family: "Perpetua", serif;
 }

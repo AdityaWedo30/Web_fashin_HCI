@@ -8,8 +8,8 @@ body {
 
 .hero {
   text-align: center;
-  padding: 200px;
-  background: url("/assets/backgriund\ firs\ page.png") no-repeat center
+  padding: 200px 20px;
+  background: url("/assets/backgriund%20firs%20page.png") no-repeat center
     center/cover;
 }
 
@@ -30,15 +30,14 @@ body {
 .hero p {
   font-size: 1rem;
   letter-spacing: 1px;
-  font-weight: normal;
-  white-space: pre-line;
   font-weight: 300;
+  white-space: pre-line;
 }
 
 .new-product {
   text-align: center;
-  padding: 250px;
-  background: url("/assets/Frame\ 1.png") no-repeat center center/cover;
+  padding: 250px 20px;
+  background: url("/assets/Frame%201.png") no-repeat center center/cover;
 }
 
 .new-product h2 {
@@ -52,7 +51,7 @@ body {
 
 .best-week {
   text-align: center;
-  padding: 190px;
+  padding: 190px 20px;
   background-color: #333366;
 }
 
@@ -71,17 +70,77 @@ body {
   text-align: center;
   background: wheat;
   font-family: Arial, sans-serif;
-}
-
-.product {
   padding: 10px;
   font-size: 18px;
   color: black;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .product:hover {
   transform: scale(1.1);
   background-color: #ff5733;
   color: white;
-  transition: 0.3s;
+}
+
+/* RESPONSIVE: Ukuran mengecil tapi tetap satu baris */
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 10px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+    letter-spacing: 10px;
+  }
+
+  .hero h2 {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .new-product {
+    padding: 100px 10px;
+  }
+
+  .new-product h2 {
+    font-size: 24px;
+  }
+
+  .new-product p {
+    font-size: 14px;
+  }
+
+  .best-week {
+    padding: 80px 10px;
+  }
+
+  .product {
+    width: 150px;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .products {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+  }
+
+  .products::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .products::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+
+  .products::-webkit-scrollbar-track {
+    background: #1c1c3c;
+  }
 }

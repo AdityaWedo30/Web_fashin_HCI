@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event - Wijaya Fashion</title>
 
-    <!-- Styles -->
     <link rel="stylesheet" href="/style/stylesEvent.css" />
     <link rel="stylesheet" href="/style/font.css" />
     <link rel="stylesheet" href="/style/header.css" />
     <link rel="stylesheet" href="/style/footer.css" />
   </head>
   <body>
-    <!-- Header -->
     <header>
       <nav>
         <a href="/index.html" class="logo">
@@ -30,7 +28,6 @@
       </nav>
     </header>
 
-    <!-- Video Section -->
     <div class="video-container">
       <video autoplay muted loop playsinline>
         <source
@@ -47,7 +44,6 @@
       </div>
     </div>
 
-    <!-- Form Section -->
     <div class="page-content">
       <div class="form-container">
         <form id="eventForm">
@@ -66,7 +62,11 @@
               maxlength="10"
               required
             />
-            <input type="text" id="gender" placeholder="Gender" required />
+            <select id="gender" required>
+              <option value="">-- Pilih Gender --</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
           </div>
           <button type="submit">Submit</button>
           <p id="message"></p>
@@ -74,7 +74,6 @@
       </div>
     </div>
 
-    <!-- Footer -->
     <footer>
       <div class="footer-content">
         <div class="address">
@@ -116,7 +115,6 @@
       </div>
     </footer>
 
-    <!-- Script -->
     <script src="/script/nav.js"></script>
     <script src="/script/script.js"></script>
   </body>

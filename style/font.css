@@ -26,3 +26,12 @@
 .banner p {
   font-family: "Perpetua", serif;
 }
+
+.product-info h3,
+.product-info p {
+  font-family: "Perpetua", serif;
+}
+
+.sustainable-text {
+  font-family: "Perpetua Titling MT", serif;
+}

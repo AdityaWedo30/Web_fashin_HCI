@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,8 +8,15 @@
     <link rel="stylesheet" href="/style/font.css" />
     <link rel="stylesheet" href="/style/footer.css" />
     <link rel="stylesheet" href="/style/header.css" />
+    <style>
+      .product-link {
+        text-decoration: none;
+        color: inherit;
+      }
+    </style>
   </head>
   <body>
+    <!-- Header -->
     <header>
       <nav>
         <a href="index.html" class="logo">
@@ -23,6 +31,8 @@
         <div class="login"><a href="#">Login</a></div>
       </nav>
     </header>
+
+    <!-- Banner -->
     <section class="banner">
       <h1>New Product K-76</h1>
       <p>
@@ -31,81 +41,100 @@
       <p>Pre-Order Only <strong>Get 35% Off!</strong></p>
     </section>
 
+    <!-- Filter Bar -->
     <div class="filters">
       <span>Active Filters:</span>
       <span class="filter">Electronics Devices ✖</span>
       <span class="filter">5 Star Rating ✖</span>
     </div>
 
+    <!-- Product List (Top Section) -->
     <main class="product-list">
-      <div class="product">
-        <div class="image-wrapper">
-          <img src="/assets/prudct card top/high_heels.jpg" alt="high_heels" />
+      <a href="/page/DetailPage.html" class="product-link">
+        <div class="product">
+          <div class="image-wrapper">
+            <img
+              src="/assets/prudct card top/high_heels.jpg"
+              alt="High Heels"
+            />
+          </div>
+          <div class="product-info">
+            <h3>High Heels</h3>
+            <p>Shoes</p>
+            <p class="price">
+              Rp 2.500.000 <span class="old-price">Rp 3.500.000</span>
+            </p>
+          </div>
         </div>
-        <div class="product-info">
-          <h3>Product</h3>
-          <p>Type</p>
-          <p class="price">
-            Rp 2.500.000 <span class="old-price">Rp 3.500.000</span>
-          </p>
+      </a>
+      <a href="/page/DetailPage.html" class="product-link">
+        <div class="product">
+          <div class="image-wrapper">
+            <img src="/assets/prudct card top/kemeja.jpg" alt="Shirt" />
+          </div>
+          <div class="product-info">
+            <h3>Shirt</h3>
+            <p>Clothes</p>
+            <p class="price">
+              Rp 1.800.000 <span class="old-price">Rp 2.200.000</span>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="product">
-        <div class="image-wrapper">
-          <img src="/assets/prudct card top/kemeja.jpg" alt="kemeja" />
+      </a>
+      <a href="/page/DetailPage.html" class="product-link">
+        <div class="product">
+          <div class="image-wrapper">
+            <img
+              src="/assets/prudct card top/leather_shoes.jpg"
+              alt="Leather Shoes"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Leather Shoes</h3>
+            <p>Shoes</p>
+            <p class="price">
+              Rp 3.000.000 <span class="old-price">Rp 3.800.000</span>
+            </p>
+          </div>
         </div>
-        <div class="product-info">
-          <h3>Elegant Watch</h3>
-          <p>Accessories</p>
-          <p class="price">
-            Rp 1.800.000 <span class="old-price">Rp 2.200.000</span>
-          </p>
+      </a>
+      <a href="/page/DetailPage.html" class="product-link">
+        <div class="product">
+          <div class="image-wrapper">
+            <img
+              src="/assets/prudct card top/polo_shirt.jpg"
+              alt="Polo Shirt"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Polo Shirt</h3>
+            <p>Clothes</p>
+            <p class="price">
+              Rp 950.000 <span class="old-price">Rp 1.200.000</span>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="product">
-        <div class="image-wrapper">
-          <img
-            src="/assets/prudct card top/leather_shoes.jpg"
-            alt="leather_shoes"
-          />
+      </a>
+      <a href="/page/DetailPage.html" class="product-link">
+        <div class="product">
+          <div class="image-wrapper">
+            <img
+              src="/assets/prudct card top/training_pants.jpg"
+              alt="Training Pants"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Training Pants</h3>
+            <p>Clothes</p>
+            <p class="price">
+              Rp 1.250.000 <span class="old-price">Rp 1.750.000</span>
+            </p>
+          </div>
         </div>
-        <div class="product-info">
-          <h3>Leather Handbag</h3>
-          <p>Bag</p>
-          <p class="price">
-            Rp 3.000.000 <span class="old-price">Rp 3.800.000</span>
-          </p>
-        </div>
-      </div>
-      <div class="product">
-        <div class="image-wrapper">
-          <img src="/assets/prudct card top/polo_shirt.jpg" alt="polo_shirt" />
-        </div>
-        <div class="product-info">
-          <h3>Luxury Sunglasses</h3>
-          <p>Eyewear</p>
-          <p class="price">
-            Rp 950.000 <span class="old-price">Rp 1.200.000</span>
-          </p>
-        </div>
-      </div>
-      <div class="product">
-        <div class="image-wrapper">
-          <img
-            src="/assets/prudct card top/training_pants.jpg"
-            alt="training_pants"
-          />
-        </div>
-        <div class="product-info">
-          <h3>Classic Heels</h3>
-          <p>Footwear</p>
-          <p class="price">
-            Rp 1.250.000 <span class="old-price">Rp 1.750.000</span>
-          </p>
-        </div>
-      </div>
+      </a>
     </main>
 
+    <!-- Video Section -->
     <div class="video-container">
       <video autoplay loop muted>
         <source src="/assets/Launch_product.mp4" type="video/mp4" />
@@ -113,69 +142,81 @@
       </video>
     </div>
 
+    <!-- Product List (Bottom Section) -->
     <main class="product-list">
-      <div class="product">
-        <div class="image-wrapper">
-          <img src="/assets/product card bottom/sendal.jpg" alt="sendal" />
+      <a href="/page/DetailPage.html" class="product-link">
+        <div class="product">
+          <div class="image-wrapper">
+            <img src="/assets/product card bottom/sendal.jpg" alt="Sandals" />
+          </div>
+          <div class="product-info">
+            <h3>Sandals</h3>
+            <p>Footwear</p>
+            <p class="price">
+              Rp 2.500.000 <span class="old-price">Rp 3.500.000</span>
+            </p>
+          </div>
         </div>
-        <div class="product-info">
-          <h3>Product</h3>
-          <p>Type</p>
-          <p class="price">
-            Rp 2.500.000 <span class="old-price">Rp 3.500.000</span>
-          </p>
+      </a>
+      <a href="/page/DetailPage.html" class="product-link">
+        <div class="product">
+          <div class="image-wrapper">
+            <img src="/assets/product card bottom/lipstic.jpg" alt="Lipstick" />
+          </div>
+          <div class="product-info">
+            <h3>Lipstick</h3>
+            <p>Cosmetics</p>
+            <p class="price">
+              Rp 1.800.000 <span class="old-price">Rp 2.200.000</span>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="product">
-        <div class="image-wrapper">
-          <img src="/assets/product card bottom/lipstic.jpg" alt="lipstic" />
+      </a>
+      <a href="/page/DetailPage.html" class="product-link">
+        <div class="product">
+          <div class="image-wrapper">
+            <img src="/assets/product card bottom/cahin.jpg" alt="Chain Bag" />
+          </div>
+          <div class="product-info">
+            <h3>Chain Bag</h3>
+            <p>Bag</p>
+            <p class="price">
+              Rp 3.000.000 <span class="old-price">Rp 3.800.000</span>
+            </p>
+          </div>
         </div>
-        <div class="product-info">
-          <h3>Elegant Watch</h3>
-          <p>Accessories</p>
-          <p class="price">
-            Rp 1.800.000 <span class="old-price">Rp 2.200.000</span>
-          </p>
+      </a>
+      <a href="/page/DetailPage.html" class="product-link">
+        <div class="product">
+          <div class="image-wrapper">
+            <img src="/assets/product card bottom/hat.jpg" alt="Luxury Hat" />
+          </div>
+          <div class="product-info">
+            <h3>Luxury Hat</h3>
+            <p>Accessories</p>
+            <p class="price">
+              Rp 950.000 <span class="old-price">Rp 1.200.000</span>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="product">
-        <div class="image-wrapper">
-          <img src="/assets/product card bottom/cahin.jpg" alt="cahin" />
+      </a>
+      <a href="/page/DetailPage.html" class="product-link">
+        <div class="product">
+          <div class="image-wrapper">
+            <img src="/assets/product card bottom/parfum.jpg" alt="Perfume" />
+          </div>
+          <div class="product-info">
+            <h3>Luxury Perfume</h3>
+            <p>Fragrance</p>
+            <p class="price">
+              Rp 1.250.000 <span class="old-price">Rp 1.750.000</span>
+            </p>
+          </div>
         </div>
-        <div class="product-info">
-          <h3>Leather Handbag</h3>
-          <p>Bag</p>
-          <p class="price">
-            Rp 3.000.000 <span class="old-price">Rp 3.800.000</span>
-          </p>
-        </div>
-      </div>
-      <div class="product">
-        <div class="image-wrapper">
-          <img src="/assets/product card bottom/hat.jpg" alt="hat" />
-        </div>
-        <div class="product-info">
-          <h3>Luxury Sunglasses</h3>
-          <p>Eyewear</p>
-          <p class="price">
-            Rp 950.000 <span class="old-price">Rp 1.200.000</span>
-          </p>
-        </div>
-      </div>
-      <div class="product">
-        <div class="image-wrapper">
-          <img src="/assets/product card bottom/parfum.jpg" alt="parfum" />
-        </div>
-        <div class="product-info">
-          <h3>Classic Heels</h3>
-          <p>Footwear</p>
-          <p class="price">
-            Rp 1.250.000 <span class="old-price">Rp 1.750.000</span>
-          </p>
-        </div>
-      </div>
+      </a>
     </main>
 
+    <!-- Footer -->
     <footer>
       <div class="footer-content">
         <div class="address">

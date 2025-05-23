@@ -1,3 +1,4 @@
+/* === Global Styles === */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,10 +7,11 @@ body {
   color: white;
 }
 
+/* === Banner Section === */
 .banner {
   text-align: center;
   padding: 40px;
-  background-image: url("/assets/Frame\ 1.png"); /* Ganti dengan URL atau path gambar */
+  background-image: url("/assets/Frame 1.png"); /* Pastikan path benar */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,22 +22,26 @@ body {
   font-size: 23px;
 }
 
+/* === Filter Bar === */
 .filters {
   background: #f4a261;
   padding: 10px;
   color: black;
+  text-align: center;
+  font-size: 16px;
 }
 
+/* === Product List Grid === */
 .product-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
   gap: 20px;
   padding: 15px;
   justify-content: center;
-  margin-top: 80px;
-  margin-bottom: 70px;
+  margin: 80px 0 70px 0;
 }
 
+/* === Individual Product Card === */
 .product {
   width: 187px;
   height: 270px;
@@ -46,18 +52,20 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.image-wrapper img {
-  width: 170px;
-  height: 160px;
-  object-fit: cover;
-  transition: transform 0.4s ease, opacity 0.4s ease;
-  border-radius: 8px;
-}
-
+/* === Image Styling === */
 .image-wrapper {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+.image-wrapper img {
+  width: 170px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* === Product Hover Effect === */
 .product:hover {
   transform: scale(1.03);
   background: linear-gradient(145deg, #3a3a6a, #4e4e80);
@@ -69,9 +77,16 @@ body {
   opacity: 0.95;
 }
 
+/* === Product Info Section === */
 .product-info h3,
-p {
+.product-info p {
   text-align: left;
+  font-weight: normal;
+  margin: 15px 0;
+}
+
+.product-info h3 {
+  font-size: 25px;
 }
 
 .price {
@@ -80,7 +95,6 @@ p {
   font-size: 14px;
 }
 
-/* Efek hover untuk harga */
 .product:hover .price {
   color: #ffcc00;
 }
@@ -92,19 +106,76 @@ p {
   font-size: 12px;
 }
 
+/* === Video Container Section === */
 .video-container {
-  height: 350px; /* Atur tinggi frame sesuai keinginan */
-  overflow: hidden; /* Potong bagian yang lebih dari tinggi */
+  height: clamp(200px, 35vh, 350px);
+  overflow: hidden;
   position: relative;
+  border-radius: 12px;
 }
 
 .video-container video {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
   transform: translate(-50%, -50%);
   object-fit: cover;
   z-index: -1;
+  opacity: 0.9;
+}
+
+/* === Responsive Adjustment for Mobile === */
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+    font-size: 16px;
+  }
+
+  .banner {
+    padding: 25px 10px;
+    background-size: cover;
+  }
+
+  .banner p {
+    font-size: 18px;
+  }
+
+  .filters {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 10px;
+    margin: 50px 0;
+  }
+
+  .product {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-info h3 {
+    font-size: 18px;
+  }
+
+  .price,
+  .old-price {
+    font-size: 13px;
+  }
+
+  .video-container {
+    height: 200px;
+    border-radius: 8px;
+  }
 }

@@ -82,7 +82,7 @@ body {
   color: white;
 }
 
-/* RESPONSIVE: Ukuran mengecil tapi tetap satu baris */
+/* RESPONSIVE*/
 @media (max-width: 768px) {
   .hero {
     padding: 80px 10px;

@@ -61,7 +61,6 @@ ul li a:hover {
   border-radius: 8px;
 }
 
-/* RESPONSIVE: Skala kecil tetap dalam 1 baris */
 @media (max-width: 768px) {
   .logo {
     font-size: 18px;

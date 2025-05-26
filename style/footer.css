@@ -9,12 +9,11 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Biarkan elemen membungkus jika sempit */
+  flex-wrap: wrap;
   color: black;
   gap: 20px;
 }
 
-/* Tombol kontak */
 .contact {
   display: flex;
   gap: 10px;
@@ -32,7 +31,6 @@ footer {
   font-size: 14px;
 }
 
-/* Ikon media sosial */
 .social-icons {
   display: flex;
   justify-content: center;
@@ -52,14 +50,12 @@ footer {
   transform: scale(1.1);
 }
 
-/* Hak cipta */
 .copyright {
   color: black;
   font-size: 14px;
   margin-top: 10px;
 }
 
-/* RESPONSIVE: ukuran HP, rapikan tata letak */
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;

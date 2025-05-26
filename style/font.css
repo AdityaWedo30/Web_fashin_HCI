@@ -9,6 +9,17 @@
   font-family: "Perpetua", serif;
 }
 
+.login a {
+  font-family: "Perpetua Titling MT", serif;
+}
+
+.product {
+  font-family: "Perpetua Titling MT", serif;
+}
+
+.best-week {
+  font-family: "Perpetua Titling MT", serif;
+}
 .new-product h2 {
   font-family: "Perpetua Titling MT", serif;
 }
@@ -33,5 +44,17 @@
 }
 
 .sustainable-text {
+  font-family: "Perpetua Titling MT", serif;
+}
+
+.overlay-text {
+  font-family: "Perpetua Titling MT", serif;
+}
+
+ul {
+  font-family: "Perpetua Titling MT", serif;
+}
+
+.requirements {
   font-family: "Perpetua Titling MT", serif;
 }
